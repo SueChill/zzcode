@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "bearer_token_env": "GITHUB_TOKEN",
+      "headers": {
+        "X-MCP-Readonly": "true",
+        "X-MCP-Toolsets": "repos",
+        "X-MCP-Tools": "get_file_contents,search_code,search_repositories"
+      },
+      "tools": ["get_file_contents", "search_code", "search_repositories"],
+      "auto_approve": ["get_file_contents", "search_code", "search_repositories"],
+      "description": "用于按需查看 GitHub 仓库链接、读取代码及搜索仓库或代码。用户要求了解 GitHub 链接中的内容时优先使用这些工具；从链接提取 owner、repo、分支或路径，不必先克隆整个仓库。仅提到 GitHub、问候或无关任务不需要调用。",
+      "timeout": 30,
+      "connect_timeout": 10
+    }
+  }
+}

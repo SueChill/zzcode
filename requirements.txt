@@ -1,0 +1,8 @@
+openai
+python-dotenv
+rich>=14.0.0,<16
+prompt-toolkit>=3.0.52,<4
+tavily-python>=0.8.5,<0.9
+mcp>=2.3.0,<3
+jsonschema>=4.26,<5
+PyYAML>=6.0.2,<7
