@@ -33,24 +33,6 @@ python main.py
 
 输入普通文字后回车发送，输入 `exit` 退出。
 
-### 在其他项目里使用
-
-**启动命令执行时所在的目录，就是本次工作区。** 在目标项目目录打开 CMD，然后通过绝对路径运行 zzcode，无须切换到 zzcode 目录。
-
-例如，本机已安装依赖的 Python 和 zzcode 位于以下位置时：
-
-```cmd
-"F:\Python\python.exe" "F:\1-todosomething\zzcode\main.py"
-```
-
-如果使用前面创建的虚拟环境，则改用虚拟环境的解释器：
-
-```cmd
-"F:\1-todosomething\zzcode\.venv\Scripts\python.exe" "F:\1-todosomething\zzcode\main.py"
-```
-
-程序仍从 **zzcode 安装目录**读取 `.env`、`SYSTEM.md` 和 `mcp.json`。工作区路径来自 `Path.cwd()`，启动后固定，不随模型调用变化。
-
 ## 终端操作
 
 | 操作 | 效果 |
